@@ -1,0 +1,4 @@
+User-agent: Googlebot
+Disallow:
+
+Sitemap: https://bhcom.000webhostapp.com/sitemap_index.xml

@@ -1,0 +1,503 @@
+/*Main elements*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+body {
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	background-color: white;
+}	
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+		text-decoration: none;
+		color: #00aeff;
+}
+
+/*Navbar*/
+
+.navbarContainer {
+	width: 100%;
+	overflow: hidden;
+	font-family: "Open Sans", sans-serif;
+	min-height: 70px;
+	border-bottom: 1px solid #00aeff;
+
+}
+
+.navbarContainer li {
+	display: inline;
+	padding: 5px;
+	font-family: "Open Sans", sans-serif;
+
+}
+
+.navbarContainer a {
+	color: black;
+	text-decoration: none;
+}
+
+.navbarContainer nav {
+	float: right;
+	margin: 45px 300px 0px 0px;
+}
+
+.navbarContainer h1 {
+	float: left;
+	margin-left:  300px;
+	margin-top: 30px;
+}
+
+.navbarContainer .osvjetljeno, .navbarContainer .trenutno a{
+	color:#00aeff;
+	font-weight: bold;
+}
+
+.navbarContainer .osvjetljeno2 {
+	color: #ffe900;
+	font-weight: bold; 
+}
+
+/*Middle content*/
+
+#prezentacija {
+	min-height: 400px;
+	background: url("../img/banner.jpg") no-repeat;
+	border-bottom: #00aeff 3px solid;
+	text-align: left;
+}
+
+#prezentacija h1 {
+	margin-top: 100px;
+	font-size: 30px;
+	margin-bottom: 10px;
+	font-family: "Open Sans", sans-serif;
+}
+
+#prezentacija p{
+	font-size: 20px;
+	font-family: "Open Sans", sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+	font-family: "Open Sans", sans-serif;
+}
+
+aside#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 60px;
+}
+
+article#glavna-colona {
+	float: left;
+	width: 65%;
+	margin-top: 30px;
+}
+
+.glavninaslov  {
+	margin-top: 10px;
+}
+
+.plava {
+	padding: 15px;
+	background: #00aeff;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+/*Box*/
+
+
+#boxes .box {
+	float: left;
+	width: 40%;
+	margin: 50px;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+}
+
+#boxes .box a {
+	text-decoration: none;
+	color: black;
+}
+
+#boxes .box:hover h3  {
+    
+}
+
+#boxes .box img {
+	width: 90px;
+	height: 90px;
+}
+
+#boxes .box h3 {
+	font-size: 30px;
+}
+
+#boxes .box p {
+	font-size: 20px;
+}
+
+/*Gallery*/
+
+.galleryContainer {
+	width: 80%;
+	height: 600px;
+	margin:auto;
+	font-family: "Open Sans", sans-serif;
+	padding-top: 30px 0px 0px 0px;
+	margin-bottom: 50px;
+}
+
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+/*Contact Form*/
+
+.contactParagraph  {
+	margin-top: 20px;
+}
+
+.contact {
+	width: 40%;
+	text-align: center;
+	min-height: 100vh;
+	color: black;
+	box-shadow: 
+     	inset 0px 11px 8px -10px #CCC,    
+}
+
+.contact .contactBackground {
+	position:absolute;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	width: 40%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+}
+
+.contactContainer  {
+	width: 40%;
+	margin: 0 auto; 
+	font-family: "Acme", sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+.contactForm {
+	height: 500px;
+}
+
+input {
+  color: black;
+  font-size: 20px;
+  height: 55px;
+  width: 40%;
+  margin: 20px 0;
+  background: rgba(0,0,0,0);
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+::-webkit-input-placeholder {
+	color: black;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+.message {
+	color: black;
+	width: 40%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+#subject {
+	width: 50%;
+	height: 200px;
+	font-size: 20px;
+	font-family: "Open Sans", sans-serif;
+}
+
+.btn{
+
+  width: 20%;
+  float: left;
+  background: #00aeff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btnArea {
+	margin-left: 220px;
+}
+
+/*Footer*/
+
+.mainfooter {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #00aeff;
+    width: 100%;
+    color: white;
+    text-align: center;
+	font-family: "Open Sans", sans-serif;
+	padding: 5px;
+}
+
+.altFooter {
+	padding: 10px;
+    width: 100%;
+    color: white;
+    text-align: center;
+	background-color: #00aeff;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+}
+
+
+/*Animations*/
+
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.fadeIn {
+	animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/*Mobile/Tablet/Laptop*/
+
+@media (max-width: 1024px) {
+	
+	#prezentacija {
+		background-image: none;
+		min-height: 200px;
+	}
+
+	#prezentacija h1 {
+		margin-top: 30px;
+	}
+
+	.navbarContainer {
+		background-color: black;
+
+	}
+
+	.navbarContainer a {
+		color: white;	
+	}
+
+	.navbarContainer nav {
+		float: none;
+		margin: 0;
+	}
+
+	.navbarContainer #brend {
+		width: 100%;
+	}
+
+	.navbarContainer h1 {
+		float: none;
+		margin: 0px auto;
+		justify-content: center;
+		display: flex;
+	}
+
+
+	ul {
+		text-align: center;
+	}
+
+	.container2 {
+		min-width: 100%;
+		margin: 0 auto;
+	}
+
+
+	.galleryContainer {
+		height: 100%;
+    	width: 100%;
+	}
+
+	.gallery > div:hover > img{
+		transform: scale(1.4,1.4);
+	}
+
+	.gallery {
+	height: 100%;
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+
+	.galleryContainer h1 {
+		padding-left:  10%;
+	}
+
+	.gallery > div > img {
+		width: 100%
+	}
+
+	.btn {
+		width: 100%;
+	}
+
+	.btnArea {
+		margin: 0;
+	}
+
+	textarea#subject {
+		
+		width: 100%;
+	}
+
+	#boxes .box {
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin: 30px 0px 100px 0;
+		padding-left: 0;
+		border-bottom: 1px solid black;
+	}
+
+	#boxes .box p {
+		font-size: 14px;
+	}
+
+	#boxes .box h3 {
+		font-size: 22px;
+	}
+
+	.webfix {
+		margin: 0;
+	}
+
+	article#glavna-colona{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	aside#sidebar {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	.mySlides {
+		height: 300px;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.modal-content {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.column {
+		display: flex;
+		padding: 5px;
+		width: 50%;
+	}
+
+	.mainfooter {
+		margin-top: 50px;
+		position: relative;
+	}
+
+	.mapDiv {
+		width: 60%
+	}
+
+}
+
+	
+
+	
+
+
